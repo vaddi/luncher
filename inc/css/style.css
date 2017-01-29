@@ -1,0 +1,82 @@
+
+
+a:link, 
+a:visited {
+	transition: all 1000ms ease-out;
+}
+a:hover,
+a:focus {
+	outline: 0;
+	transition: all 150ms ease-in;
+}
+a:active {
+	color:#f00;
+}
+
+
+.pull-center { text-align: center; }
+.pull-center.pull-top { margin-bottom: -20px; }
+
+
+.form-group {
+	margin-bottom: -15px;
+}
+
+.form-group .btn {
+	margin-bottom: 5px;
+}
+
+.label {
+	display: inline-block;
+}
+.label-default {
+	padding: 4px 7px;
+}
+
+.label-default.active {
+	background: #444;
+}
+
+.label-default,
+.btn-default {
+	transition: all 1000ms ease-out;
+}
+
+
+.label-default:hover,
+.btn-default:hover,
+.label-default:focus,
+.btn-default:focus {
+	transition: all 150ms ease-in;
+	cursor: pointer;
+}
+
+.list-group-item {
+	padding-bottom: 20px;
+}
+
+.list-group-item blockquote {
+	margin: 15px 0 20px 2px;
+}
+
+.list-group-item input[type="checkbox"] {
+	display: none;
+}
+
+
+
+
+
+
+
+/* DEBUG View invisible checkboxes */
+
+/*[data-toggle="buttons"] > .btn input[type="checkbox"] {*/
+/*	position: inherit;*/
+/*}*/
+
+/*.list-group-item input[type="checkbox"] {*/
+/*    display: inherit;*/
+/*}*/
+
+
