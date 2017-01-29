@@ -64,8 +64,20 @@ a:active {
 }
 
 
+.elinks { 
+	
+	font-size: 18px;
+}
+
+.elinks a span { 
+	font-size: 30px;
+}
 
 
+
+@media only screen and (max-width: 620px) {
+	.pull-right.elinks {float: none !important; font-size:inherit;margin-bottom:10px;}
+}
 
 
 

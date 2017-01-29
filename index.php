@@ -31,17 +31,21 @@
 	function buildElement( $element ) {
 		$lname = strtolower( trim( $element->name ) );
 		$result  = '<div class="list-group-item" data-search="' . Base::arr2str( $element->angebote ) . Base::arr2str( $element->tags ) . Base::arr2str( $element->entfernung ) . '">' . "\n";
+		// link elements
+		$result .= '<div class="pull-right elinks">';
+		$result .= '<span title="' . $element->entfernung . '. zu Fuß" data-toggle="tooltip" data-placement="right">' . $element->entfernung . '. Fußweg</span>&ensp;';
+		$result .= ( $element->lat != '' && $element->long != '' ) ? '<a href="' . Base::linkTo( $element->lat, $element->long, $element->zoom, $element->name ) . '" title="Auf G-Maps zeigen" data-toggle="tooltip"><span class="glyphicon glyphicon-map-marker"></span></a>&ensp;' : '';
+		$result .=  $element->url['long'] != '' ? '<a href="' . $element->url['long'] . '" title="Webseite besuchen" data-toggle="tooltip"><span class="glyphicon glyphicon-globe"></span></a>&ensp;' : '';
+		$result .= $element->email != '' ? '<a href="mailto:' . $element->email . '" title="E-Mail schreiben" data-toggle="tooltip"><span class="glyphicon glyphicon-envelope"></span></a>&ensp;' : '';
+		$result .=  $element->tel != '' ? '<a href="tel:' . $element->tel . '" title="Anrufen" data-toggle="tooltip"><span class="glyphicon glyphicon-earphone"></span></a>' : '';
+		$result .= '</div>';
+		// headline
 		$result .= '<h2 class="list-group-item-heading">';
 		$result .= $element->name;
 		$result .= '</h2>';
-		$result .= '<p>';
-		$result .= '<span title="' . $element->entfernung . '. zu Fuß" data-toggle="tooltip" data-placement="right">' . $element->entfernung . '. Fußweg</span>&ensp;';
-		
-		$result .= '<span title="Auf G-Maps zeigen" data-toggle="tooltip"><a href="' . Base::linkTo( $element->lat, $element->long, $element->zoom, $element->name ) . '"><span class="glyphicon glyphicon-map-marker"></span></a></span> ';
-		
-		$result .= '<span title="Webseite besuchen" data-toggle="tooltip"><a href="' . $element->url['long'] . '"><span class="glyphicon glyphicon-globe"></span></a></span>';
-		$result .= '</p>';
+		// opening
 		$result .= $element->geöffnet;
+		// labels
 		$result .= '<p class="list-group-item-text">';
 		$result .= Base::arr2label( $element->tags ) . " ";
 		$result .= Base::arr2label( $element->angebote ) . " ";
