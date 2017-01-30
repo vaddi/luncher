@@ -54,8 +54,6 @@
 		return $result;
 	}
 	
-	echo '<script type="text/javascript">var acc = `' . buildElement( $luncher->getRandLocation(), true ) . '`;</script>'
-	
 ?>
 	
 	<header class="page-header row">
@@ -135,7 +133,7 @@
 		
 		<footer style="padding:10px 0 30px;">
 			<p class="pull-center pull-top">· <?= date('Y') ?> ·</p>
-			<p class="pull-right"> <a href="http://www.mvattersen.de/">mvattersen.de</a></p>
+			<p class="pull-right"> <a href="http://luncher.mvattersen.de/">luncher.mvattersen.de</a></p>
 			<p>
 				Bootstrap <a href="https://github.com/twbs/bootstrap/releases/latest">v3.3.7</a>
 				jQuery <a href="https://github.com/jquery/jquery">3.1.1</a>

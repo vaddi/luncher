@@ -35,6 +35,42 @@ $data = array(
 		'tel' => '05361 600 67 67',
 		'email' => ''
 	),
+	(object) array(
+          'name' => 'BRANDTEINS',
+          'address' => 'Willy-Brandt-Platz 1',
+          'lat' => '52.4285595',
+          'long' => '10.7906691',
+          'zoom' => '19',
+          'entfernung' => '2min',
+          'tags' => array( 'Phaeno' ),
+          'angebote' => array( 'Currywurst', 'Eis' ),
+          'geöffnet' => '<blockquote>Montag bis Sonntag: 11:00 - 16:00</blockquote>',
+          'url' => array(
+                  'short' => 'phaeno.de/brandteins',
+                  'long' => 'http://www.phaeno.de/brandteins/'
+          ),
+          'tel' => '05361 890 10 610',
+          'email' => ''
+  ),
+  (object) array(
+          'name' => 'Orchid Thai House',
+          'address' => 'Willy-Brandt-Platz 4',
+          'lat' => '52.4286766',
+          'long' => '10.7872292',
+          'zoom' => '19',
+          'entfernung' => '3min',
+          'tags' => array( 'Thailändisch' ),
+          'angebote' => array( 'Peking Suppe' ),
+          'geöffnet' => '<blockquote>Freitag bis Samstag: 9:30 - 18:00
+												 <br />Montag bis Samstag: 11:30 - 15:00, 18:00 - 22:00
+												 <br />Sonn- u. Feiertag: 11:30 - 15:00, 18:00 - 21:30</blockquote>',
+          'url' => array(
+                  'short' => 'orchid-thai-house.de',
+                  'long' => 'http://orchid-thai-house.de/'
+          ),
+          'tel' => '05361 837880',
+          'email' => ''
+  ),
 	(object) array( 
 		'name' => 'An Nam',  
 		'address' => 'Willy-Brandt-Platz 8',
@@ -52,6 +88,23 @@ $data = array(
 		'tel' => '05361 275 76 51',
 		'email' => 'info@an-nam.net'
 	),
+	(object) array(
+          'name' => 'foodtruck-paolo',
+          'address' => '',
+          'lat' => '',
+          'long' => '',
+          'zoom' => '19',
+          'entfernung' => '4min',
+          'tags' => array( 'Food-Truck' ),
+          'angebote' => array( 'Pasta', 'Burger' ),
+          'geöffnet' => '<blockquote>Dienstag und Mittwoch: 11:00 - 16:00</blockquote>',
+          'url' => array(
+                  'short' => 'www.foodtruck-paolo.de',
+                  'long' => 'http://www.foodtruck-paolo.de/blog/'
+          ),
+          'tel' => '05361 415 25 93',
+          'email' => 'info@foodtruck-paolo.de'
+  ),
 	(object) array( 
 		'name' => 'Arena Restaurant',  
 		'address' => 'Porschestr. 23',
@@ -162,6 +215,7 @@ $data = array(
 		),
 		'tel' => '05361 89 12 218',
 		'email' => 'kontakt@aalto-wolfsburg.de'
-	)
+	),
+  
 );
 ?>
