@@ -12,7 +12,7 @@ class Geocoding {
 	
 	public function __construct( $address, $apiKey ) {
 		$this->address = $address;
-		$this->apiKey = 'xxx';
+		$this->apiKey = 'AIzaSyBYc4mJvlRXuMCih_Cjh-E_kFzkLzF-Jhc';
 		$this->apiUrl = "http://maps.google.com/maps/api/geocode/";
 		$this->apiTyp = 'json';
 		
