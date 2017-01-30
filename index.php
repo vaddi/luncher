@@ -131,11 +131,11 @@
 	
 		<div class="clear"></div>
 		
-		<footer style="padding:10px 0 30px;">
+		<footer>
 			<p class="pull-center pull-top">· <?= date('Y') ?> ·</p>
-			<p class="pull-right"> <a href="http://luncher.mvattersen.de/">luncher.mvattersen.de</a></p>
+			<p class="pull-right"> luncher on <a href="https://github.com/vaddi/luncher">github.com</a></p>
 			<p>
-				Bootstrap <a href="https://github.com/twbs/bootstrap/releases/latest">v3.3.7</a>
+				Bootstrap <a href="https://github.com/twbs/bootstrap/releases/latest">v3.3.7</a> · 
 				jQuery <a href="https://github.com/jquery/jquery">3.1.1</a>
 			</p>
 		</footer>

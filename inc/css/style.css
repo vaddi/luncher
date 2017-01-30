@@ -73,10 +73,16 @@ a:active {
 	font-size: 30px;
 }
 
-
+footer {
+	padding:10px 0 30px;
+}
 
 @media only screen and (max-width: 620px) {
 	.pull-right.elinks {float: none !important; font-size:inherit;margin-bottom:10px;}
+	.pull-center, 
+	.pull-right { float: none !important; }
+	.pull-center.pull-top { margin-bottom: 0;}
+	footer p { text-align: center; }
 }
 
 
