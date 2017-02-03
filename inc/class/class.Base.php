@@ -1,7 +1,5 @@
 <?php
 
-require_once('class.Geocoding.php');
-
 class Base {
 	
 	public static function buildCheckboxes( $element ) {
@@ -40,8 +38,14 @@ class Base {
 		return $result;
 	}
 	
-	public static function linkTo( $lat, $long, $zoom, $name ) {
-		 return Geocoding::linkTo( $lat, $long, $zoom, $name );
+	public static function linkTo( $lat = '', $long = '', $zoom = '', $name = null ) {
+		$arr1 = array( ' ', '&' );
+		$arr2 = array( '+', '%26' );
+		if( $name != null ) $url = 'maps/place/' . str_replace( $arr1, $arr2, $name ) . "/@$lat,$long," . $zoom . "z";
+			else if( $name != '' ) $url = "maps?t=m&q=loc:$lat,$long&z=$zoom&near=$name";
+			else $url = "maps?t=m&q=loc:$lat,$long&z=$zoom";
+//		return "comgooglemaps://?center=$lat,-$long&zoom=19"
+		 return "http://maps.google.com/" . $url;
 	}
 	
 	public function germanDay( $day ) {
