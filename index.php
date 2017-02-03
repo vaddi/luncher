@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+
+// constants 
+define( 'APPNAME', 'launcher' ); 
+define( 'APPDESC', 'Kleine App zum finden einer Örtlichkeit zum Speisen in Wolfsburg (Innenstadt).' );
+define( 'APPKEYW', 'Mittagstisch-Finder, Mittagstisch, Wolfsburg, 38440, Porschestr., Porschestraße' );
+
+?>
 <head>
-	<title>luncher</title>
+	<title><?= APPNAME ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="keywords" content="Mittagstisch-Finder, Mittagstisch, Wolfsburg, 38440, Porschestr., Porschestraße" />
-	<meta name="description" content="Kleine App zum finden einer Örtlichkeit zum Speisen in Wolfsburg (Innenstadt)." />
+	<meta name="keywords" content="<?= APPKEYW ?>" />
+	<meta name="description" content="<?= APPDESC ?>" />
 	<!-- icon -->
 	<script type="text/javascript" src="inc/js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="inc/js/bootstrap.min.js"></script>
@@ -23,10 +31,10 @@
 	require_once( 'inc/class/class.Luncher.php' );
 	
 	$luncher = new Luncher( $data );
+	$locations = $luncher->getLocations();
 	$tags = $luncher->getTags();
 	$angebote = $luncher->getAngebote();
 	$entfernungen = $luncher->getEntfernungen();
-	$locations = $luncher->getLocations();
 	
 	function buildElement( $element ) {
 		$lname = strtolower( trim( $element->name ) );
@@ -44,7 +52,7 @@
 		$result .= $element->name;
 		$result .= '</h2>';
 		// opening
-		$result .= $element->geöffnet;
+		$result .= '<blockquote>' . $element->geöffnet . '</blockquote>';
 		// labels
 		$result .= '<p class="list-group-item-text">';
 		$result .= Base::arr2label( $element->tags ) . " ";
@@ -63,11 +71,10 @@
 			</a>
 		</div>
 		<div class="col-sm-10">
-			<h1>Luncher <small>Der Mittagstisch-Finder</small></h1>
-			<p>Kleine App zum finden eines Mittagstisches in der Wolfsburger Innenstadt (Porschestraße).</p>
+			<h1><?= ucfirst(APPNAME) ?> <small>Der Mittagstisch-Finder</small></h1>
+			<p><?= APPDESC ?></p>
 		</div>
 	</header>
-	
 	
 	<div class="maincont">
 		
@@ -82,7 +89,7 @@
 		echo '	<label class="control-label col-sm-2" style="margin-top:5px;">Kategorie:</label> ';
 		echo '	<div data-toggle="buttons" class="form-group col-sm-10">';
 		foreach ( $tags as $tid => $tag ) {
-			print_r( '		' . $tag . " \n" );
+			echo '		' . $tag . " \n";
 		}
 		echo '	</div>';
 		echo '</div>' . "<br /><br />\n";
@@ -92,7 +99,7 @@
 		echo '	<label class="control-label col-sm-2" style="margin-top:5px;">Angebote:</label> ';
 		echo '	<div data-toggle="buttons" class="form-group col-sm-10">';
 		foreach ( $angebote as $aid => $angebot ) {
-			print_r( '		' . $angebot . " \n" );
+			echo  '		' . $angebot . " \n";
 		}
 		echo '	</div>';
 		echo '</div>' . "<br /><br />\n";
@@ -102,7 +109,7 @@
 		echo '	<label class="control-label col-sm-2" style="margin-top:5px;">Minuten:</label> ';
 		echo '	<div data-toggle="buttons" class="form-group col-sm-10">';
 		foreach ( $entfernungen as $eid => $entfernung ) {
-			print_r( '		' . $entfernung . " \n" );
+			echo  '		' . $entfernung . " \n";
 		}
 		echo '	</div>';
 		echo '</div>' . "<br /><br />\n";
@@ -110,18 +117,18 @@
 		// print searchstrings
 		echo '<div class="row">';
 		echo '	<label class="control-label col-sm-2" style="">Filter:</label> ';
-		echo '	<div id="searchstrings" class="col-sm-10">Alle</div>';
+		echo '	<div class="pull-right col-sm-1"><span id="counter">0</span> / <span id="totals">' . $luncher->getTotal() . '</span></div>';
+		echo '	<div id="searchstrings" class="col-sm-9">Alle</div>';
 		echo '</div>' . "<br />\n";
 		
 		// list of locations
 		echo '<div id="locations" class="list-group">';
 		$result = '';
 		foreach ( $locations as $id => $location ) {
-			$result = buildElement( $location );
-			print_r( '	' . $result );
+			$result = buildElement( $location, $id );
+			echo  '	' . $result;
 		}
 		echo '</div>' . "<br />\n";
-		
 	} else {
 		// locations = false
 		echo "Keine Daten in \$locations";
@@ -133,7 +140,7 @@
 		
 		<footer>
 			<p class="pull-center pull-top">· <?= date('Y') ?> ·</p>
-			<p class="pull-right"> luncher on <a href="https://github.com/vaddi/luncher">github.com</a></p>
+			<p class="pull-right"> <?= APPNAME ?> on <a href="https://github.com/vaddi/<?= APPNAME ?>">github.com</a></p>
 			<p>
 				Bootstrap <a href="https://github.com/twbs/bootstrap/releases/latest">v3.3.7</a> · 
 				jQuery <a href="https://github.com/jquery/jquery">3.1.1</a>

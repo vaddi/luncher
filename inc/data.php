@@ -27,7 +27,16 @@ $data = array(
 		'entfernung' => '1min', 
 		'tags' => array( 'Franchise' ), 
 		'angebote' => array( 'Pizza', 'Eis' ),
-		'geöffnet' => '<blockquote>Freitag bis Samstag: 11:00 - 23:00</blockquote>',
+//		'geöffnet' => '<blockquote>Freitag bis Samstag: 11:00 - 23:00</blockquote>',
+		'geöffnet' => array(
+			'Mon' => array( '11:00', '23:00' ),
+			'Die' => array( '11:00', '23:00' ),
+			'Mit' => array( '11:00', '23:00' ),
+			'Don' => array( '11:00', '23:00' ),
+			'Fre' => array( '11:00', '23:00' ),
+			'Sam' => array( '11:00', '23:00' ),
+			'Son' => array()
+		),
 		'url' => array(
 			'short' => 'dominos.de',
 			'long' => 'https://www.dominos.de/kaufhaus/de-wolfsburgost-33885'
@@ -36,40 +45,58 @@ $data = array(
 		'email' => ''
 	),
 	(object) array(
-          'name' => 'BRANDTEINS',
-          'address' => 'Willy-Brandt-Platz 1',
-          'lat' => '52.4285595',
-          'long' => '10.7906691',
-          'zoom' => '19',
-          'entfernung' => '2min',
-          'tags' => array( 'Phaeno' ),
-          'angebote' => array( 'Currywurst', 'Eis' ),
-          'geöffnet' => '<blockquote>Montag bis Sonntag: 11:00 - 16:00</blockquote>',
-          'url' => array(
-                  'short' => 'phaeno.de/brandteins',
-                  'long' => 'http://www.phaeno.de/brandteins/'
-          ),
-          'tel' => '05361 890 10 610',
-          'email' => ''
+    'name' => 'BRANDTEINS',
+    'address' => 'Willy-Brandt-Platz 1',
+    'lat' => '52.4285595',
+    'long' => '10.7906691',
+    'zoom' => '19',
+    'entfernung' => '2min',
+    'tags' => array( 'Phaeno' ),
+    'angebote' => array( 'Currywurst', 'Eis' ),
+//    'geöffnet' => '<blockquote>Montag bis Sonntag: 11:00 - 16:00</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '11:00', '16:00' ),
+			'Die' => array( '11:00', '16:00' ),
+			'Mit' => array( '11:00', '16:00' ),
+			'Don' => array( '11:00', '16:00' ),
+			'Fre' => array( '11:00', '16:00' ),
+			'Sam' => array( '11:00', '16:00' ),
+			'Son' => array( '11:00', '16:00' )
+		),
+    'url' => array(
+            'short' => 'phaeno.de/brandteins',
+            'long' => 'http://www.phaeno.de/brandteins/'
+    ),
+    'tel' => '05361 890 10 610',
+    'email' => ''
   ),
   (object) array(
-          'name' => 'Orchid Thai House',
-          'address' => 'Willy-Brandt-Platz 4',
-          'lat' => '52.4286766',
-          'long' => '10.7872292',
-          'zoom' => '19',
-          'entfernung' => '3min',
-          'tags' => array( 'Thailändisch' ),
-          'angebote' => array( 'Peking Suppe' ),
-          'geöffnet' => '<blockquote>Freitag bis Samstag: 9:30 - 18:00
-												 <br />Montag bis Samstag: 11:30 - 15:00, 18:00 - 22:00
-												 <br />Sonn- u. Feiertag: 11:30 - 15:00, 18:00 - 21:30</blockquote>',
-          'url' => array(
-                  'short' => 'orchid-thai-house.de',
-                  'long' => 'http://orchid-thai-house.de/'
-          ),
-          'tel' => '05361 837880',
-          'email' => ''
+    'name' => 'Orchid Thai House',
+    'address' => 'Willy-Brandt-Platz 4',
+    'lat' => '52.4286766',
+    'long' => '10.7872292',
+    'zoom' => '19',
+    'entfernung' => '3min',
+    'tags' => array( 'Thailändisch' ),
+    'angebote' => array( 'Peking Suppe' ),
+//    'geöffnet' => '<blockquote>Freitag bis Samstag: 9:30 - 18:00
+//									 <br />Montag bis Samstag: 11:30 - 15:00, 18:00 - 22:00
+//									 <br />Sonn- u. Feiertag: 11:30 - 15:00, 18:00 - 21:30</blockquote>',
+		'geöffnet' => array(
+			'Mon' => array( '11:30', '15:00', '18:00', '22:00' ),
+			'Die' => array( '11:30', '15:00', '18:00', '22:00' ),
+			'Mit' => array( '11:30', '15:00', '18:00', '22:00' ),
+			'Don' => array( '11:30', '15:00', '18:00', '22:00' ),
+			'Fre' => array( '09:30', '18:00', '18:00', '22:00' ),
+			'Sam' => array( '09:30', '18:00', '18:00', '22:00' ),
+			'Son' => array( '11:30', '15:00', '18:00', '21:30' )
+		),
+    'url' => array(
+            'short' => 'orchid-thai-house.de',
+            'long' => 'http://orchid-thai-house.de/'
+    ),
+    'tel' => '05361 837880',
+    'email' => ''
   ),
 	(object) array( 
 		'name' => 'An Nam',  
@@ -80,7 +107,16 @@ $data = array(
 		'entfernung' => '4min', 
 		'tags' => array( 'Vieatnamesisch', 'Asiatisch' ), 
 		'angebote' => array( 'Gun Bao' ),
-		'geöffnet' => '<blockquote>Freitag bis Sonntag: 11:00 - 23:00</blockquote>',
+//		'geöffnet' => '<blockquote>Freitag bis Sonntag: 11:00 - 23:00</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '11:00', '23:00' ),
+			'Die' => array( '11:00', '23:00' ),
+			'Mit' => array( '11:00', '23:00' ),
+			'Don' => array( '11:00', '23:00' ),
+			'Fre' => array( '11:00', '23:00' ),
+			'Sam' => array( '11:00', '23:00' ),
+			'Son' => array( '11:00', '23:00' )
+		),
 		'url' => array(
 			'short' => 'an-nam.net',
 			'long' => 'http://www.an-nam.net/speisen/'
@@ -89,22 +125,59 @@ $data = array(
 		'email' => 'info@an-nam.net'
 	),
 	(object) array(
-          'name' => 'foodtruck-paolo',
-          'address' => '',
-          'lat' => '',
-          'long' => '',
-          'zoom' => '19',
-          'entfernung' => '4min',
-          'tags' => array( 'Food-Truck' ),
-          'angebote' => array( 'Pasta', 'Burger' ),
-          'geöffnet' => '<blockquote>Dienstag und Mittwoch: 11:00 - 16:00</blockquote>',
-          'url' => array(
-                  'short' => 'www.foodtruck-paolo.de',
-                  'long' => 'http://www.foodtruck-paolo.de/blog/'
-          ),
-          'tel' => '05361 415 25 93',
-          'email' => 'info@foodtruck-paolo.de'
+    'name' => 'foodtruck-paolo',
+    'address' => '',
+    'lat' => '',
+    'long' => '',
+    'zoom' => '19',
+    'entfernung' => '4min',
+    'tags' => array( 'Food-Truck' ),
+    'angebote' => array( 'Pasta', 'Burger' ),
+//    'geöffnet' => '<blockquote>Dienstag und Mittwoch: 11:00 - 16:00</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array(),
+			'Die' => array( '11:00', '16:00' ),
+			'Mit' => array( '11:00', '16:00' ),
+			'Don' => array(  ),
+			'Fre' => array(),
+			'Sam' => array(),
+			'Son' => array()
+		),
+    'url' => array(
+            'short' => 'www.foodtruck-paolo.de',
+            'long' => 'http://www.foodtruck-paolo.de/blog/'
+    ),
+    'tel' => '05361 415 25 93',
+    'email' => 'info@foodtruck-paolo.de'
   ),
+  (object) array( 
+		'name' => 'Pomodoro Rosso',
+		'address' => 'Porschestraße 2c',
+		'lat' => '52.4266581', 
+		'long' => '10.7897084', 
+		'zoom' => '19', 
+		'entfernung' => '4min', 
+		'tags' => array( 'Italienisch' ), 
+		'angebote' => array( 'Pizza', 'Pasta' ),
+//		'geöffnet' => '<blockquote>Montag bis Donnerstag: 11:00 - 23:00
+//									 <br />Freitag und Samstag: 11:00 - 24:00
+//									 <br />Sonn- und Feiertage: 11:00 - 23:00</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '08:00', '23:00' ),
+			'Die' => array( '08:00', '23:00' ),
+			'Mit' => array( '08:00', '23:00' ),
+			'Don' => array( '08:00', '23:00' ),
+			'Fre' => array( '08:00', '23:00' ),
+			'Sam' => array( '08:00', '23:00' ),
+			'Son' => array( '11:00', '23:00' )
+		),
+		'url' => array(
+			'short' => 'pomodoro-rosso.de',
+			'long' => 'http://pomodoro-rosso.de/'
+		),
+		'tel' => '05361 8375151',
+		'email' => ''
+	),
 	(object) array( 
 		'name' => 'Arena Restaurant',  
 		'address' => 'Porschestr. 23',
@@ -114,7 +187,16 @@ $data = array(
 		'entfernung' => '5min', 
 		'tags' => array( 'Türkisch' ), 
 		'angebote' => array( 'Döner' ),
-		'geöffnet' => '<blockquote>Freitag bis Sonntag: 10:00 - 00:00</blockquote>',
+//		'geöffnet' => '<blockquote>Freitag bis Sonntag: 10:00 - 00:00</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '10:00', '00:00' ),
+			'Die' => array( '10:00', '00:00' ),
+			'Mit' => array( '10:00', '00:00' ),
+			'Don' => array( '10:00', '00:00' ),
+			'Fre' => array( '10:00', '00:00' ),
+			'Sam' => array( '10:00', '00:00' ),
+			'Son' => array( '10:00', '00:00' )
+		),
 		'url' => array(
 			'short' => 'arenarestaurant-wob.de',
 			'long' => 'http://www.arenarestaurant-wob.de/speisekarte.html'
@@ -131,9 +213,18 @@ $data = array(
 		'entfernung' => '5min', 
 		'tags' => array( 'Franchise' ), 
 		'angebote' => array( 'Sandwiches', 'Cookies' ),
-		'geöffnet' => '<blockquote>Montag bis Donnerstag: 08:30 - 22:30
-									 <br />Freitag und Samstag: 08:30 - 23:30
-									 <br />Sonntag: 10:00 - 22:30</blockquote>',
+//		'geöffnet' => '<blockquote>Montag bis Donnerstag: 08:30 - 22:30
+//									 <br />Freitag und Samstag: 08:30 - 23:30
+//									 <br />Sonntag: 10:00 - 22:30</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '08:30', '22:30' ),
+			'Die' => array( '08:30', '22:30' ),
+			'Mit' => array( '08:30', '22:30' ),
+			'Don' => array( '08:30', '22:30' ),
+			'Fre' => array( '08:30', '23:30' ),
+			'Sam' => array( '10:00', '22:30' ),
+			'Son' => array( '10:00', '22:30' )
+		),
 		'url' => array(
 			'short' => 'subway.de',
 			'long' => 'http://www.subway.com/de-de/menunutrition'
@@ -150,9 +241,18 @@ $data = array(
 		'entfernung' => '5min', 
 		'tags' => array( 'Grillrestaurant' ), 
 		'angebote' => array( 'Burger', 'Steaks', 'Sandwiches' ),
-		'geöffnet' => "<blockquote>Montag bis Donnerstag: 10:00 - 00:00 
-									 <br />Freitag und Samstag: 10:00 - 1:00
-									 <br />Sonntag: 10:00 - 23:30</blockquote>",
+//		'geöffnet' => "<blockquote>Montag bis Donnerstag: 10:00 - 00:00 
+//									 <br />Freitag und Samstag: 10:00 - 1:00
+//									 <br />Sonntag: 10:00 - 23:30</blockquote>",
+    'geöffnet' => array(
+			'Mon' => array( '10:00', '00:00' ),
+			'Die' => array( '10:00', '00:00' ),
+			'Mit' => array( '10:00', '00:00' ),
+			'Don' => array( '10:00', '00:00' ),
+			'Fre' => array( '10:00', '01:00' ),
+			'Sam' => array( '10:00', '01:00' ),
+			'Son' => array( '10:00', '23:30' )
+		),
 		'url' => array(
 			'short' => 'eatwithheart.de',
 			'long' => 'http://www.eatwithheart.de/#speisekarten'
@@ -169,33 +269,23 @@ $data = array(
 		'entfernung' => '6min', 
 		'tags' => array( 'Cafe', 'à la carte' ), 
 		'angebote' => array( 'Frühstück', 'Torten', 'Currywurst' ),
-		'geöffnet' => '<blockquote>Freitag bis Samstag: 9:00 - 18:00
-									 <br />Dienstag: Ruhetag</blockquote>',
+//		'geöffnet' => '<blockquote>Freitag bis Samstag: 9:00 - 18:00
+//									 <br />Dienstag: Ruhetag</blockquote>',
+    'geöffnet' => array(
+			'Mon' => array( '09:00', '18:00' ),
+			'Die' => array(),
+			'Mit' => array( '09:00', '18:00' ),
+			'Don' => array( '09:00', '18:00' ),
+			'Fre' => array( '09:00', '18:00'),
+			'Sam' => array( '09:00', '18:00' ),
+			'Son' => array()
+		),
 		'url' => array(
 			'short' => 'ateliercafe.de',
 			'long' => 'http://www.ateliercafe.de/contorstart.php?page=22'
 		),
 		'tel' => '05361 12 2 19',
 		'email' => 'info@ateliercafe.de'
-	),
-	(object) array( 
-		'name' => 'Vapiano',  
-		'address' => 'Porschestraße 26-30',
-		'lat' => '52.4254985', 
-		'long' => '10.7891881', 
-		'zoom' => '19', 
-		'entfernung' => '6min', 
-		'tags' => array( 'Italienisch' ), 
-		'angebote' => array( 'Pizza', 'Pasta' ),
-		'geöffnet' => '<blockquote>Montag bis Donnerstag: 11:00 - 23:00
-									 <br />Freitag und Samstag: 11:00 - 24:00
-									 <br />Sonn- und Feiertage: 11:00 - 23:00</blockquote>',
-		'url' => array(
-			'short' => 'vapiano.com',
-			'long' => 'https://de.vapiano.com/en/restaurants/vapiano-wolfsburg-porschestrasse-26-30-1/'
-		),
-		'tel' => '05361 89 05 122',
-		'email' => ''
 	),
 	(object) array( 
 		'name' => "aalto | Restaurant & Bar",  
@@ -206,9 +296,18 @@ $data = array(
 		'entfernung' => '13min', 
 		'tags' => array( 'à la carte', 'Italienisch' ), 
 		'angebote' => array( 'Pasta', 'Fisch', 'Pizza' ),
-		'geöffnet' => "<blockquote>Montag bis Mittwoch: 11:30–15:00 18:00–23:00
-									 <br />Donnerstag: 11:30–15:00 18:00–23:00
-									 <br />Freitag und Sonntag: Geschlossen</blockquote>",
+//		'geöffnet' => "<blockquote>Montag bis Mittwoch: 11:30–15:00 18:00–23:00
+//									 <br />Donnerstag: 11:30–15:00 18:00–23:00
+//									 <br />Freitag und Sonntag: Geschlossen</blockquote>",
+		'geöffnet' => array(
+			'Mon' => array( '11:30', '15:00', '18:00', '23:00' ),
+			'Die' => array( '11:30', '15:00', '18:00', '23:00' ),
+			'Mit' => array( '11:30', '15:00', '18:00', '23:00' ),
+			'Don' => array( '11:30', '15:00', '18:00', '23:00' ),
+			'Fre' => array(),
+			'Sam' => array( '09:30', '18:00', '18:00', '22:00' ),
+			'Son' => array()
+		),
 		'url' => array(
 			'short' => 'aalto-wolfsburg.de',
 			'long' => 'http://aalto-wolfsburg.de/'

@@ -44,7 +44,35 @@ class Base {
 		 return Geocoding::linkTo( $lat, $long, $zoom, $name );
 	}
 	
-	
+	public function germanDay( $day ) {
+		if( $day == "" ) return null;
+		$result = "";
+		switch ($day)
+		{
+			case 'Tue':
+				$result = "Die";
+			break;
+			case 'Wed':
+				$result = "Mit";
+			break;
+			case 'Thu':
+				$result = "Don";
+			break;
+			case 'Fri':
+				$result = "Fre";
+			break;
+			case 'Sat':
+				$result = "Sam";
+			break;
+			case 'Sun':
+				$result = "Son";
+			break;
+			default:
+				$result = $day;
+			break;
+		}
+		return $result;
+	}
 	
 }
 
