@@ -144,7 +144,7 @@ define( 'APPKEYW', 'Mittagstisch-Finder, Mittagstisch, Wolfsburg, 38440, Porsche
 		
 		<footer>
 			<p class="pull-center pull-top">· <?= date('Y') ?> ·</p>
-			<p class="pull-right"> <?= APPNAME ?> on <a href="https://github.com/vaddi/<?= APPNAME ?>">github.com</a></p>
+			<p class="pull-right"> <?= APPNAME ?> <?= Base::getVersion() ?> on <a href="https://github.com/vaddi/<?= APPNAME ?>">github.com</a></p>
 			<p>
 				Bootstrap <a href="https://github.com/twbs/bootstrap/releases/latest">v3.3.7</a> · 
 				jQuery <a href="https://github.com/jquery/jquery">3.1.1</a>

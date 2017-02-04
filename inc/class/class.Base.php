@@ -78,6 +78,23 @@ class Base {
 		return $result;
 	}
 	
+	/** 
+	 * Helper function to get version number from "git tag" 
+	 * (dont forget to commit them with "git push origin TAG"!)
+	 */
+	public static function getVersion() {
+		if( self::git() ) {
+			if( is_file( '/usr/bin/git' ) ) 
+				return exec( '/usr/bin/git describe --abbrev=0 --tags' );
+		}
+		return false;
+	}
+	
+	private static function git() {
+		if( is_dir( realpath( './.git' ) ) ) return true;
+		return false;
+	}
+	
 }
 
 ?>
