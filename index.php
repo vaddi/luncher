@@ -131,7 +131,11 @@ define( 'APPKEYW', 'Mittagstisch-Finder, Mittagstisch, Wolfsburg, 38440, Porsche
 		echo '</div>' . "<br />\n";
 	} else {
 		// locations = false
-		echo "Keine Daten in \$locations";
+		echo '<div id="locations" class="list-group">';
+		echo '<div class="list-group-item list-group-item-info">';
+		echo '<strong>Alle Läden geschlossen.</strong>';
+		echo '</div>';
+		echo '</div>' . "<br />\n";
 	}
 
 ?>

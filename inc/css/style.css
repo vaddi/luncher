@@ -51,6 +51,10 @@ a:active {
 	cursor: pointer;
 }
 
+.list-group-item-info {
+	padding:15px;
+}
+
 .list-group-item {
 	padding-bottom: 20px;
 }
@@ -84,6 +88,7 @@ footer {
 	.pull-center.pull-top { margin-bottom: 0;}
 	footer p { text-align: center; }
 }
+
 
 
 
