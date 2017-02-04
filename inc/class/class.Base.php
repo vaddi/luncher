@@ -17,12 +17,9 @@ class Base {
 		if( is_array( $array ) ) {
 			foreach ( $array as $key => $value ) {
 //				$result .= self::arr2label( $value ) . " ";
-				$result[] = '<label class="label label-default"><input id="label_'.$value.'_'.$key.'" value="'.$value.'" type="checkbox" /> <span class="glyphicon glyphicon-tag"></span> ' . $value . '</label>';
+				$result[] = '<label class="label label-default" data-toggle="tooltip" data-placement="right" title="'.$value.' zum Filter hinzufügen/entfernen"><input id="label_'.$value.'_'.$key.'" value="'.$value.'" type="checkbox" /> <span class="glyphicon glyphicon-tag"></span> ' . $value . '</label>';
 			}
 		} 
-//		else {
-//			$result .= '<label class="label label-default"><input id="labelbox_'.$key.'" value="'.$value.'" type="checkbox" /> <span class="glyphicon glyphicon-tag"></span> ' . $array . '</label>';
-//		}
 		return self::arr2str( $result );
 	}
 	

@@ -51,6 +51,17 @@ a:active {
 	cursor: pointer;
 }
 
+.btn-default.focus, 
+/*.btn-default.active,*/
+.btn-default.active:focus,
+.btn-default.active.focus:focus {
+	background: #d9edf7;
+}
+
+.btn-default.active.focus {
+	background: #93cce9;;
+}
+
 .list-group-item-info {
 	padding:15px;
 }
