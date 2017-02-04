@@ -39,8 +39,8 @@ class Luncher extends Base {
 		foreach ( $this->getStoreOpenings( $store ) as $day => $openings ) {
 			if( $day === $dayInput ) {
 				$amount = count( $openings );
-//				$now = time();
-				$now = strtotime( '12:31' ); // debug
+				$now = time();
+//				$now = strtotime( '12:31' ); // debug
 				// Has open today?
 				if( $amount === 0 ) return $result;
 				if ( $amount > 2 ) {
