@@ -3,7 +3,7 @@
 <?php
 
 // constants 
-define( 'APPNAME', 'launcher' ); 
+define( 'APPNAME', 'luncher' ); 
 define( 'APPDESC', 'Kleine App zum finden einer Örtlichkeit zum Speisen in Wolfsburg (Innenstadt).' );
 define( 'APPKEYW', 'Mittagstisch-Finder, Mittagstisch, Wolfsburg, 38440, Porschestr., Porschestraße' );
 

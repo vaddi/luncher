@@ -95,6 +95,8 @@ $(document).ready( function() {
 		}
 	});	
 	
+	// Add initial counter value
+	$( '#counter' ).text( $( '#totals' ).text() );
 });
 
 
