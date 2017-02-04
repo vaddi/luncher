@@ -1,4 +1,4 @@
-# ARTpage #
+# Luncher #
 A small PHP Page to find a lunch location in WOB. Latest `master` running at [luncher.mvattersen.de](http://luncher.mvattersen.de/)
 
 
