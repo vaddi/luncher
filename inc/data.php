@@ -260,6 +260,34 @@ $data = array(
 		'tel' => '05361 890 54 45',
 		'email' => 'wolfsburg@eatwithheart.de'
 	),
+	(object) array(
+        'name' => 'Café Cadera',
+        'address' => 'Porschestraße 38',
+        'lat' => '52.42442',
+        'long' => '10.7883856',
+        'zoom' => '19',
+        'entfernung' => '7min',
+        'tags' => array( 'Café' ),
+        'angebote' => array( 'Baguettebrötchen' ),
+//      'geöffnet' => "<blockquote>Montag bis Donnerstag: 10:00 - 00:00
+//                                   <br />Freitag und Samstag: 10:00 - 1:00
+//                                   <br />Sonntag: 10:00 - 23:30</blockquote>",
+    'geöffnet' => array(
+            'Mon' => array( '07:00', '19:00' ),
+            'Die' => array( '07:00', '19:00' ),
+            'Mit' => array( '07:00', '19:00' ),
+            'Don' => array( '07:00', '19:00' ),
+            'Fre' => array( '07:00', '19:00' ),
+            'Sam' => array( '07:00', '18:00' ),
+            'Son' => array( '09:00', '18:00' )
+        ),
+        'url' => array(
+            'short' => 'cadera.de',
+            'long' => 'http://www.cadera.de/backwaren_snacks.htm'
+        ),
+        'tel' => '05361 12125',
+        'email' => 'info@cadera.de'
+    ),
 	(object) array( 
 		'name' => 'Atelier Cafe',  
 		'address' => 'An der St. Annen Kirche 11',
