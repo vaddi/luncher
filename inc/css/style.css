@@ -68,6 +68,13 @@ a:active {
 
 .list-group-item {
 	padding-bottom: 20px;
+	transition: all 1000ms ease-out;
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+	transition: all 150ms ease-in;
+	background: #fafafa;
 }
 
 .list-group-item blockquote {
