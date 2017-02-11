@@ -1,6 +1,7 @@
 <?php
 
 $data = array(
+// obect template
 //	(object) array( 
 //		'name' => '',  
 //		'address' => 'Willy-Brandt-Platz 8',
