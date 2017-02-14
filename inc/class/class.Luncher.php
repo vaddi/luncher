@@ -1,5 +1,9 @@
 <?php
 
+// set default timezone
+date_default_timezone_set('Europe/Berlin');
+
+// include Base
 require_once( 'class.Base.php' );
 
 class Luncher extends Base {
