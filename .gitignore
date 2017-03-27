@@ -1,3 +1,4 @@
 .gitignore
 inc/class/class.Geocoding.php
+.DS_Store
 

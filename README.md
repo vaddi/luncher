@@ -24,7 +24,7 @@ The daily question, what do we eat today. Luncher is a pretty easy to use locati
 
 
 ## Credits ##
-1. [MVattersen][] Coding Power by mvattersen.de
+1. [MVattersen][] Code by mvattersen.de
 
 
 [MVattersen]: http://www.mvattersen.de/
