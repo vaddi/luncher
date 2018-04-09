@@ -2,14 +2,14 @@
 
 $data = array(
 // obect template
-//	(object) array( 
-//		'name' => '',  
+//	(object) array(
+//		'name' => '',
 //		'address' => 'Willy-Brandt-Platz 8',
-//		'lat' => '', 
-//		'long' => '', 
+//		'lat' => '',
+//		'long' => '',
 //		'zoom' => '19',
-//		'entfernung' => '', 
-//		'tags' => array(), 
+//		'entfernung' => '',
+//		'tags' => array(),
 //		'angebote' => array(),
 //		'geöffnet' => '<blockquote>Freitag bis Samstag: 9:30 - 18:00</blockquote>',
 //		'url' => array(
@@ -19,16 +19,15 @@ $data = array(
 //		'tel' => '05361',
 //		'email' => ''
 //	),
-	(object) array( 
-		'name' => "Domino's Wolfsburg Ost", 
+	(object) array(
+		'name' => "Domino's Wolfsburg Ost",
 		'address' => 'Porschestr. 1',
-		'lat' => '52.4276594', 
-		'long' => '10.7915568', 
-		'zoom' => '19', 
-		'entfernung' => '1min', 
-		'tags' => array( 'Franchise' ), 
+		'lat' => '52.4276594',
+		'long' => '10.7915568',
+		'zoom' => '19',
+		'entfernung' => '1min',
+		'tags' => array( 'Franchise' ),
 		'angebote' => array( 'Pizza', 'Eis' ),
-//		'geöffnet' => '<blockquote>Freitag bis Samstag: 11:00 - 23:00</blockquote>',
 		'geöffnet' => array(
 			'Mon' => array( '11:00', '23:00' ),
 			'Die' => array( '11:00', '23:00' ),
@@ -54,7 +53,6 @@ $data = array(
     'entfernung' => '2min',
     'tags' => array( 'Phaeno' ),
     'angebote' => array( 'Currywurst', 'Eis' ),
-//    'geöffnet' => '<blockquote>Montag bis Sonntag: 11:00 - 16:00</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '11:00', '16:00' ),
 			'Die' => array( '11:00', '16:00' ),
@@ -80,9 +78,6 @@ $data = array(
     'entfernung' => '3min',
     'tags' => array( 'Thailändisch' ),
     'angebote' => array( 'Peking Suppe' ),
-//    'geöffnet' => '<blockquote>Freitag bis Samstag: 9:30 - 18:00
-//									 <br />Montag bis Samstag: 11:30 - 15:00, 18:00 - 22:00
-//									 <br />Sonn- u. Feiertag: 11:30 - 15:00, 18:00 - 21:30</blockquote>',
 		'geöffnet' => array(
 			'Mon' => array( '11:30', '15:00', '18:00', '22:00' ),
 			'Die' => array( '11:30', '15:00', '18:00', '22:00' ),
@@ -99,16 +94,15 @@ $data = array(
     'tel' => '05361 837880',
     'email' => ''
   ),
-	(object) array( 
-		'name' => 'An Nam',  
+	(object) array(
+		'name' => 'An Nam',
 		'address' => 'Willy-Brandt-Platz 8',
-		'lat' => '52.4281142', 
-		'long' => '10.7895934', 
+		'lat' => '52.4281142',
+		'long' => '10.7895934',
 		'zoom' => '19',
-		'entfernung' => '4min', 
-		'tags' => array( 'Vieatnamesisch', 'Asiatisch' ), 
+		'entfernung' => '4min',
+		'tags' => array( 'Vieatnamesisch', 'Asiatisch' ),
 		'angebote' => array( 'Gun Bao' ),
-//		'geöffnet' => '<blockquote>Freitag bis Sonntag: 11:00 - 23:00</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '11:00', '23:00' ),
 			'Die' => array( '11:00', '23:00' ),
@@ -151,18 +145,15 @@ $data = array(
     'tel' => '05361 415 25 93',
     'email' => 'info@foodtruck-paolo.de'
   ),
-  (object) array( 
+  (object) array(
 		'name' => 'Pomodoro Rosso',
 		'address' => 'Porschestraße 2c',
-		'lat' => '52.4266581', 
-		'long' => '10.7897084', 
-		'zoom' => '19', 
-		'entfernung' => '4min', 
-		'tags' => array( 'Italienisch' ), 
+		'lat' => '52.4266581',
+		'long' => '10.7897084',
+		'zoom' => '19',
+		'entfernung' => '4min',
+		'tags' => array( 'Italienisch' ),
 		'angebote' => array( 'Pizza', 'Pasta' ),
-//		'geöffnet' => '<blockquote>Montag bis Donnerstag: 11:00 - 23:00
-//									 <br />Freitag und Samstag: 11:00 - 24:00
-//									 <br />Sonn- und Feiertage: 11:00 - 23:00</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '08:00', '23:00' ),
 			'Die' => array( '08:00', '23:00' ),
@@ -179,16 +170,15 @@ $data = array(
 		'tel' => '05361 8375151',
 		'email' => ''
 	),
-	(object) array( 
-		'name' => 'Arena Restaurant',  
+	(object) array(
+		'name' => 'Arena Restaurant',
 		'address' => 'Porschestr. 23',
-		'lat' => '52.425612', 
-		'long' => '10.7898636', 
-		'zoom' => '19', 
-		'entfernung' => '5min', 
-		'tags' => array( 'Türkisch' ), 
+		'lat' => '52.425612',
+		'long' => '10.7898636',
+		'zoom' => '19',
+		'entfernung' => '5min',
+		'tags' => array( 'Türkisch' ),
 		'angebote' => array( 'Döner' ),
-//		'geöffnet' => '<blockquote>Freitag bis Sonntag: 10:00 - 00:00</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '10:00', '00:00' ),
 			'Die' => array( '10:00', '00:00' ),
@@ -205,18 +195,15 @@ $data = array(
 		'tel' => '05361 84 34 567',
 		'email' => ''
 	),
-	(object) array( 
-		'name' => 'Subway',  
+	(object) array(
+		'name' => 'Subway',
 		'address' => 'Porschestr. 21a',
-		'lat' => '52.4257514', 
-		'long' => '10.7901317', 
-		'zoom' => '19', 
-		'entfernung' => '5min', 
-		'tags' => array( 'Franchise' ), 
+		'lat' => '52.4257514',
+		'long' => '10.7901317',
+		'zoom' => '19',
+		'entfernung' => '5min',
+		'tags' => array( 'Franchise' ),
 		'angebote' => array( 'Sandwiches', 'Cookies' ),
-//		'geöffnet' => '<blockquote>Montag bis Donnerstag: 08:30 - 22:30
-//									 <br />Freitag und Samstag: 08:30 - 23:30
-//									 <br />Sonntag: 10:00 - 22:30</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '08:30', '22:30' ),
 			'Die' => array( '08:30', '22:30' ),
@@ -233,18 +220,15 @@ $data = array(
 		'tel' => '05361 8463946',
 		'email' => ''
 	),
-	(object) array( 
-		'name' => 'Eat with Heart',  
+	(object) array(
+		'name' => 'Eat with Heart',
 		'address' => 'Porschestraße 26-30',
-		'lat' => '52.4256691', 
-		'long' => '10.7891643', 
-		'zoom' => '19', 
-		'entfernung' => '5min', 
-		'tags' => array( 'Grillrestaurant' ), 
+		'lat' => '52.4256691',
+		'long' => '10.7891643',
+		'zoom' => '19',
+		'entfernung' => '5min',
+		'tags' => array( 'Grillrestaurant' ),
 		'angebote' => array( 'Burger', 'Steaks', 'Sandwiches' ),
-//		'geöffnet' => "<blockquote>Montag bis Donnerstag: 10:00 - 00:00 
-//									 <br />Freitag und Samstag: 10:00 - 1:00
-//									 <br />Sonntag: 10:00 - 23:30</blockquote>",
     'geöffnet' => array(
 			'Mon' => array( '10:00', '00:00' ),
 			'Die' => array( '10:00', '00:00' ),
@@ -270,9 +254,6 @@ $data = array(
         'entfernung' => '7min',
         'tags' => array( 'Café' ),
         'angebote' => array( 'Baguettebrötchen' ),
-//      'geöffnet' => "<blockquote>Montag bis Donnerstag: 10:00 - 00:00
-//                                   <br />Freitag und Samstag: 10:00 - 1:00
-//                                   <br />Sonntag: 10:00 - 23:30</blockquote>",
     'geöffnet' => array(
             'Mon' => array( '07:00', '19:00' ),
             'Die' => array( '07:00', '19:00' ),
@@ -298,8 +279,6 @@ $data = array(
 		'entfernung' => '6min', 
 		'tags' => array( 'Cafe', 'à la carte' ), 
 		'angebote' => array( 'Frühstück', 'Torten', 'Currywurst' ),
-//		'geöffnet' => '<blockquote>Freitag bis Samstag: 9:00 - 18:00
-//									 <br />Dienstag: Ruhetag</blockquote>',
     'geöffnet' => array(
 			'Mon' => array( '09:00', '18:00' ),
 			'Die' => array(),
@@ -317,17 +296,14 @@ $data = array(
 		'email' => 'info@ateliercafe.de'
 	),
 	(object) array( 
-		'name' => "aalto | Restaurant & Bar",  
+		'name' => "aalto | Restaurant & Bar",
 		'address' => 'Porschestraße 51',
 		'lat' => '52.4195795', 
 		'long' => '10.7855113', 
 		'zoom' => '19',
 		'entfernung' => '13min', 
-		'tags' => array( 'à la carte', 'Italienisch' ), 
+		'tags' => array( 'à la carte', 'Italienisch' ),
 		'angebote' => array( 'Pasta', 'Fisch', 'Pizza' ),
-//		'geöffnet' => "<blockquote>Montag bis Mittwoch: 11:30–15:00 18:00–23:00
-//									 <br />Donnerstag: 11:30–15:00 18:00–23:00
-//									 <br />Freitag und Sonntag: Geschlossen</blockquote>",
 		'geöffnet' => array(
 			'Mon' => array( '11:30', '15:00', '18:00', '23:00' ),
 			'Die' => array( '11:30', '15:00', '18:00', '23:00' ),
@@ -344,6 +320,106 @@ $data = array(
 		'tel' => '05361 89 12 218',
 		'email' => 'kontakt@aalto-wolfsburg.de'
 	),
-  
+ 	(object) array( 
+		'name' => "Vapiano",  
+		'address' => 'Porschestraße 26-30',
+		'lat' => '52.4254609', 
+		'long' => '10.7891561', 
+		'zoom' => '19',
+		'entfernung' => '5min', 
+		'tags' => array( 'Italienisch' ), 
+		'angebote' => array( 'Pasta', 'Pizza', 'Salat' ),
+		'geöffnet' => array(
+			'Mon' => array( '10:00', '00:00' ),
+			'Die' => array( '10:00', '00:00' ),
+			'Mit' => array( '10:00', '00:00' ),
+			'Don' => array( '10:00', '00:00' ),
+			'Fre' => array( '10:00', '01:00' ),
+			'Sam' => array( '10:00', '01:00' ),
+			'Son' => array()
+		),
+		'url' => array(
+			'short' => 'vapiano.coom',
+			'long' => 'http://de.vapiano.com/de/nc/restaurants/vapiano-wolfsburg-porschestrasse-26-30-1/'
+		),
+		'tel' => '+4953618905122',
+		'email' => 'info@vapiano.eu'
+	),
+  	(object) array( 
+		'name' => "City Hotel Journal",
+		'address' => 'Kaufhofpassage 2',
+		'lat' => '52.4234448',
+		'long' => '10.7849334',
+		'zoom' => '19',
+		'entfernung' => '10min', 
+		'tags' => array( 'Hausmanskost' ),
+		'angebote' => array( 'à la carte', 'Schnitzel', 'Salat' ),
+		'geöffnet' => array(
+			'Mon' => array( '10:00', '14:00' ),
+			'Die' => array( '10:00', '14:00' ),
+			'Mit' => array( '10:00', '14:00' ),
+			'Don' => array( '10:00', '14:00' ),
+			'Fre' => array( '10:00', '14:00' ),
+			'Sam' => array( '10:00', '14:00' ),
+			'Son' => array( '10:00', '14:00' )
+		),
+		'url' => array(
+			'short' => 'cityhotel-journal-wolfsburg.de',
+			'long' => 'http://www.cityhotel-journal-wolfsburg.de/'
+		),
+		'tel' => '5361 8484977',
+		'email' => 'cityhotel-journal@t-online.de'
+	),
+   	(object) array(
+		'name' => "Arena Restaurant",
+		'address' => 'Porschestraße 23',
+		'lat' => '52.4255436',
+		'long' => '10.7899359',
+		'zoom' => '19',
+		'entfernung' => '5min',
+		'tags' => array( 'Türkisch' ),
+		'angebote' => array( 'Döner', 'Lamacun', 'Salat' ),
+		'geöffnet' => array(
+			'Mon' => array( '10:00', '00:00' ),
+			'Die' => array( '10:00', '00:00' ),
+			'Mit' => array( '10:00', '00:00' ),
+			'Don' => array( '10:00', '00:00' ),
+			'Fre' => array( '10:00', '01:00' ),
+			'Sam' => array( '10:00', '02:00' ),
+			'Son' => array( '11:00', '00:00' )
+		),
+		'url' => array(
+			'short' => 'arenarestaurant-wob.de',
+			'long' => 'http://arenarestaurant-wob.de/'
+		),
+		'tel' => '05361 8434567',
+		'email' => ''
+	),
+	(object) array(
+		'name' => 'VW Kantine',
+		'address' => 'Daimlerstr. 10',
+		'lat' => '52.4283159',
+		'long' => '10.801753',
+		'zoom' => '19',
+		'entfernung' => '12min',
+		'tags' => array( 'Kantine' ),
+		'angebote' => array( 'Hausmanskost', 'Curry Wurst' ),
+		'geöffnet' => array(
+			'Mon' => array( '10:00', '14:00' ),
+			'Die' => array( '10:00', '14:00' ),
+			'Mit' => array( '10:00', '14:00' ),
+			'Don' => array( '10:00', '14:00' ),
+			'Fre' => array( '10:00', '14:00' ),
+			'Sam' => array(),
+			'Son' => array()
+		),
+		'url' => array(
+			'short' => '',
+			'long' => ''
+		),
+		'tel' => '',
+		'email' => ''
+	),
+
 );
 ?>
