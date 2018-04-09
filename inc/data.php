@@ -420,6 +420,30 @@ $data = array(
 		'tel' => '',
 		'email' => ''
 	),
-
+	(object) array(
+		'name' => "Alt Berlin",
+		'address' => 'Kaufhof 2',
+		'lat' => '52.4237659',
+		'long' => '10.7852281',
+		'zoom' => '19',
+		'entfernung' => '11min',
+		'tags' => array( 'Bar' ),
+		'angebote' => array( 'Hausmannskost', 'Pasta', 'Pizza' ),
+		'geöffnet' => array(
+			'Mon' => array( '10:00', '00:00' ),
+			'Die' => array( '10:00', '00:00' ),
+			'Mit' => array( '10:00', '01:00' ),
+			'Don' => array( '10:00', '01:00' ),
+			'Fre' => array( '10:00', '03:00' ),
+			'Sam' => array( '10:00', '03:00' ),
+			'Son' => array( '10:00', '00:00' )
+		),
+		'url' => array(
+			'short' => 'alt-berlin-wob.de',
+			'long' => 'http://alt-berlin-wob.de/content/49/49/speisen-getraenke'
+		),
+		'tel' => '05361 13 55 8',
+		'email' => 'alt-berlin@wolfsburg.de'
+	),
 );
 ?>
