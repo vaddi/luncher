@@ -13,7 +13,7 @@ class Base {
 	}
 	
 	public static function arr2label( $array ) {
-		$result = '';
+		$result = array();
 		if( is_array( $array ) ) {
 			foreach ( $array as $key => $value ) {
 //				$result .= self::arr2label( $value ) . " ";
